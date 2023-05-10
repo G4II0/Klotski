@@ -7,11 +7,6 @@ public class MovePieceController {
 	final KlotskiApp app;
 	final Board b;
 	
-	/**
-	 * Basic constructor
-	 * @param app the view application
-	 * @param b the model board
-	 */
 	public MovePieceController(KlotskiApp app, Board b) {
 		this.app = app;
 		this.b = b;

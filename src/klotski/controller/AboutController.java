@@ -6,18 +6,9 @@ import klotski.view.KlotskiApp;
 
 public class AboutController {
 	final KlotskiApp app;
-	
-	/**
-	 * Basic constructor
-	 * @param app the top-level application view
-	 */
-	public AboutController(KlotskiApp app) {
+	 AboutController(KlotskiApp app) {
 		this.app = app;
 	}
-	
-	/**
-	 * Displays About information in a popup window
-	 */
 	public void about() {        
 		JOptionPane.showMessageDialog(app, 
 			/* Message */
