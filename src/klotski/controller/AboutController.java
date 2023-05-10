@@ -4,12 +4,15 @@ import javax.swing.JOptionPane;
 
 import klotski.view.KlotskiApp;
 
-public class AboutController {
+public class AboutController
+{
 	final KlotskiApp app;
-	 AboutController(KlotskiApp app) {
+	 AboutController(KlotskiApp app)
+	 {
 		this.app = app;
 	}
-	public void about() {        
+	public void about()
+	{
 		JOptionPane.showMessageDialog(app, 
 			/* Message */
 			"This application is a simple puzzle game implemented in Java.\n" +

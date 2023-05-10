@@ -8,23 +8,29 @@ import java.util.List;
 import klotski.model.Board;
 import klotski.view.KlotskiApp;
 
-public class OpenController {
+public class OpenController
+{
 	KlotskiApp app;
 	Board b;
 	final Path p;
 	
-	public OpenController(KlotskiApp app, Board b, Path p) {
+	public OpenController(KlotskiApp app, Board b, Path p)
+	{
 		this.app = app;
 		this.b = b;
 		this.p = p;
 	}
 
-	public boolean open() {
+	public boolean open()
+	{
 		Charset charset = Charset.forName("UTF-8");
-		try {
+		try
+		{
 			List<String> lines = Files.readAllLines(p, charset);
 			b.setPieces(lines);
-		} catch (Exception e) {
+		}
+		catch (Exception e)
+		{
 			System.err.println(e);
 			return false;
 		}

@@ -3,11 +3,13 @@ package klotski.controller;
 import klotski.model.Board;
 import klotski.view.KlotskiApp;
 
-public class MovePieceController {
+public class MovePieceController
+{
 	final KlotskiApp app;
 	final Board b;
 	
-	public MovePieceController(KlotskiApp app, Board b) {
+	public MovePieceController(KlotskiApp app, Board b)
+	{
 		this.app = app;
 		this.b = b;
 	}
@@ -18,8 +20,10 @@ public class MovePieceController {
 	 * @param direction 0=up, 1=right, 2=down, 3=right
 	 * @return true if move was successful, false otherwise
 	 */
-	public boolean move(int direction) {
-		if (b.movePiece(direction)) {
+	public boolean move(int direction)
+	{
+		if (b.movePiece(direction))
+		{
 			app.getMovesCounter().setText(Integer.toString(b.getMoves()));
 			app.getPuzzleView().refresh();
 			return true;

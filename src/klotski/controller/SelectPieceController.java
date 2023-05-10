@@ -5,15 +5,11 @@ import java.awt.event.MouseEvent;
 import klotski.model.Board;
 import klotski.view.KlotskiApp;
 
-public class SelectPieceController {
+public class SelectPieceController
+{
 	final KlotskiApp app;
 	final Board b;
-	
-	/**
-	 * Basic constructor
-	 * @param app the view application
-	 * @param b the model board
-	 */
+
 	public SelectPieceController(KlotskiApp app, Board b) {
 		this.app = app;
 		this.b = b;
@@ -25,8 +21,10 @@ public class SelectPieceController {
 	 * @param e the MouseEvent passed from the view
 	 * @return true if a Piece was successfully selected, false otherwise
 	 */
-	public boolean select(MouseEvent e) {
-		if (e.getButton() == MouseEvent.BUTTON1) {
+	public boolean select(MouseEvent e)
+	{
+		if (e.getButton() == MouseEvent.BUTTON1)
+		{
 			int xCoord = e.getX() / app.getPuzzleView().getSquareSize();
 			int yCoord = e.getY() / app.getPuzzleView().getSquareSize();
 						
@@ -38,7 +36,6 @@ public class SelectPieceController {
 			
 			return true;
 		}
-		
 		return false;
 	}
 }
