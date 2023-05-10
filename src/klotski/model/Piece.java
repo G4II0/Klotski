@@ -6,8 +6,8 @@ package klotski.model;
 public class Piece {
 	int x;
 	int y;
-	int xLength;
-	int yLength;
+	int w;
+	int h;
 	
 	public Piece(int x, int y, int w, int h)
 	{
@@ -21,7 +21,7 @@ public class Piece {
 
 	public boolean containsPoint(int x, int y)
 	{
-		if (x >= this.x && y >= this.y && x < (this.x + this.xLength) && y < (this.y + this.yLength))
+		if (x >= this.x && y >= this.y && x < (this.x + this.w) && y < (this.y + this.h))
 		{return true;}
 		else
 		{return false;}
