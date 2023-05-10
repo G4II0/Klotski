@@ -45,7 +45,7 @@ public class Board {
 	
 	public void setConfig(int number) {this.configuration = number;}
 	public boolean checkWin() { return hasWon; }
-	public int getMoves() { return moves; }
+	public int getMoves() { return movesCounter; }
 	public Piece getSelectedPiece() { return selected; }
 	public int getWidth() { return width; }
 	public int getHeight() { return height; }
@@ -59,7 +59,7 @@ public class Board {
 		{
 			throw new IllegalArgumentException("Error");
 		}
-		this.moves = Integer.parseInt(lines.get(0).trim());
+		this.movesCounter = Integer.parseInt(lines.get(0).trim());
 		pieces = new Piece[lines.size() - 1];
 		for (i = 1; i < lines.size(); ++i)
 		{
@@ -169,7 +169,7 @@ public class Board {
 		
 		// if we've gotten here it means we're clear to move the selected piece
 		selected.move(direction);
-		++moves;
+		++movesCounter;
 		return true;
 	}
 
@@ -197,14 +197,14 @@ public class Board {
 
 		}
 		
-		moves = 0;
+		movesCounter = 0;
 		selected = null;
 		hasWon = false;
 	}
 	
 	public String toString()
 	{
-		String out = Integer.toString(moves) + "\n";
+		String out = Integer.toString(movesCounter) + "\n";
 		for (Piece p : pieces)
 		{
 			out = out.concat(p.toString() + "\n");
