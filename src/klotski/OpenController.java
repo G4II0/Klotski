@@ -1,12 +1,12 @@
-package klotski.controller;
+package klotski;
 
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 
-import klotski.model.Board;
-import klotski.view.KlotskiApp;
+import klotski.Board;
+import klotski.KlotskiApp;
 
 public class OpenController
 {

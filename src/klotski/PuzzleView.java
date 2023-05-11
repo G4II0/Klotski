@@ -1,4 +1,4 @@
-package klotski.view;
+package klotski;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -8,8 +8,8 @@ import java.awt.Image;
 
 import javax.swing.JPanel;
 
-import klotski.model.Board;
-import klotski.model.Piece;
+import klotski.Board;
+import klotski.Piece;
 
 public class PuzzleView extends JPanel {
 	private static final long serialVersionUID = 3251334679791843551L;

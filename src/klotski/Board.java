@@ -1,4 +1,4 @@
-package klotski.model;
+package klotski;
 
 import java.util.List;
 

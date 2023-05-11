@@ -1,4 +1,4 @@
-package klotski.view;
+package klotski;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -23,15 +23,15 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 
-import klotski.model.Board;
-import klotski.controller.AboutController;
-import klotski.controller.MovePieceController;
-import klotski.controller.OpenController;
-import klotski.controller.QuitController;
-import klotski.controller.ResetPuzzleController;
-import klotski.controller.SaveController;
-import klotski.controller.SelectPieceController;
-import klotski.controller.SetConfigController;
+import klotski.Board;
+import klotski.AboutController;
+import klotski.MovePieceController;
+import klotski.OpenController;
+import klotski.QuitController;
+import klotski.ResetPuzzleController;
+import klotski.SaveController;
+import klotski.SelectPieceController;
+import klotski.SetConfigController;
 
 public class KlotskiApp extends JFrame {
 	Board board;	

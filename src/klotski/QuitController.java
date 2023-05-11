@@ -1,8 +1,8 @@
-package klotski.controller;
+package klotski;
 
 import javax.swing.JOptionPane;
 
-import klotski.view.KlotskiApp;
+import klotski.KlotskiApp;
 
 public class QuitController
 {

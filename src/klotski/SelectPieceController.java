@@ -1,9 +1,9 @@
-package klotski.controller;
+package klotski;
 
 import java.awt.event.MouseEvent;
 
-import klotski.model.Board;
-import klotski.view.KlotskiApp;
+import klotski.Board;
+import klotski.KlotskiApp;
 
 public class SelectPieceController
 {

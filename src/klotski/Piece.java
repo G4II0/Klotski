@@ -1,4 +1,4 @@
-package klotski.model;
+package klotski;
 
 /**
  * a class that represents a single klotski piece

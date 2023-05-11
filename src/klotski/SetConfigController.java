@@ -1,7 +1,7 @@
-package klotski.controller;
+package klotski;
 
-import klotski.model.Board;
-import klotski.view.KlotskiApp;
+import klotski.Board;
+import klotski.KlotskiApp;
 
 public class SetConfigController
 {

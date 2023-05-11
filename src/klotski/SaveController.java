@@ -1,4 +1,4 @@
-package klotski.controller;
+package klotski;
 
 import java.io.BufferedOutputStream;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.io.OutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import klotski.model.Board;
+import klotski.Board;
 
 public class SaveController
 {
